@@ -18,4 +18,3 @@ Console.WriteLine(musicTest1.ShortResume);
 musicTest2.ShowDetails();
 Console.WriteLine(musicTest2.ShortResume);
 
-Console.WriteLine(musicTest1.Sum(4, 6));
