@@ -8,6 +8,7 @@ class Music
     public bool Available { get; set; }
     public string ShortResume => $"The song {Name} belongs to the artist {Artist}";
 
+    public Gender Gender { get; set; } 
     public void ShowDetails()
     {
         Console.WriteLine($"Name: {this.Name}");
