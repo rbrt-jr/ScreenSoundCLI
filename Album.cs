@@ -1,8 +1,12 @@
 ﻿class Album
-{  
+{
+    public Album(string name)
+    {
+        this.Name = name;   
+    }
     private List<Music> songs = new List<Music>();
-    public string Name { get; set; }
-    public int TotalDurationOfThisSong => songs.Sum(s => s.Duration);
+    public string Name { get; }
+    public int TotalDurationOfThisAlbum => songs.Sum(s => s.Duration);
      
     public void AddSongAtAlbum(Music music)
     {
@@ -16,7 +20,7 @@
         {
             Console.WriteLine($"Song: {music.Name}");
         }
-        Console.WriteLine($"This album has a total of {TotalDurationOfThisSong} seconds ");
+        Console.WriteLine($"This album has a total of {TotalDurationOfThisAlbum} seconds ");
 
     }
     

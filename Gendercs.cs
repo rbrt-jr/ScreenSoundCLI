@@ -1,4 +1,4 @@
-﻿public class Gender
+﻿class Gender
 {
     public string NameOfGender { get; set; }
 
